@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>FORMS</h1>
+<form action="">
+    <fieldset>
+        <legend>
+            Personal info
+        </legend>
+    <tr>
+        <td>
+            <label for="Firstname">First Name</label>
+        <input type="text" name="firstName" id="Surname" placeholder="firstName" autocomplete="on" required autofocus>
+</td>    
+</tr>
+    <p>
+    <label for="Firstname">First Name</label>
+    <input type="text" name="lastName" id="Surname" 
+    placeholder="Surname" autocomplete="on" required> </p>
+    </p><label for="Password">Password</label>
+    <input type="password" name="password" id="password" 
+    placeholder="secret" autocomplete="on" required>
+    <p><label for="phone">Telphone</label>
+    <input type="tel" name="phone" id="phone" placeholder="+234-806-610-3456"
+    pattern="[+, 0-9] {4}-[0-9]{3}-[0-9]{3}[0-9]{4}"></p>
+    <label for="Year">Year</label>
+    <input type="number" name="decade" id="decade" 
+    min="1900" max="2022" step="10" value="2000"></p>
+    <p><label for="coffee">Coffee</label>
+    <select name="" id="name" multiple size="1">
+        <option value="Nescafe">Nescafe</option>
+        <option value="Latte">Latte</option>
+        <option value="Iced coffee">Iced coffee</option>
+        <option value="Capuccino">Capuccino</option>
+    </select></p>
+   <p><label for="favorite city">Favorite Cities</label>
+    <select name="city" id="city" >
+        <optgroup label="city">
+        <option value="Casablanca">Casablanca</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Paris">Paris</option>
+        <option value="Lagos">Lagos</option>
+    </optgroup>
+    <optgroup label="Metropolitan City">
+        <option value="New York">New York</option>
+        <option value="Shangai">Shangai</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Moscow">Moscow</option>
+    </optgroup>
+</p>
+    </select>
+</fieldset>
+<fieldset>
+    <legend>
+      Favorite food  
+    </legend>
+    <p>
+        <input type="radio" id="tacos" name="food">
+        <label for="tacos">Tacos</label>
+    </p>
+    <p>
+        <input type="radio" id="pizza" name="food">
+        <label for="tacos">Pizza</label>
+    </p>
+    <p>
+        <input type="radio" id="popcorn" name="food">
+        <label for="popcorn">Popcorn</label>
+    </p>
+    <p>
+        <input type="radio" id="others" name="food">
+        <label for="others">Others</label>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>
+        Do you have a pet?
+    </legend>
+    <p>
+        <input type="checkbox" id="cat" name="pet">
+        <label for="cat">Cat</label>
+    </p>
+    <p>
+        <input type="checkbox" id="parrot" name="pet">
+        <label for="parrot">Parrot</label>
+    </p>
+    <p>
+        <input type="checkbox" id="dog" name="pet">
+        <label for="dog">Dog</label>
+    </p>
+    <p>
+        <input type="checkbox" id="others" name="pet">
+        <label for="others">Others</label>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Send A Message</legend>
+    <label for="message"> What do you have to say
+    </label>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message..."></textarea>
+</fieldset>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+</body>
+</html>
